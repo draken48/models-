@@ -1,0 +1,28 @@
+{
+    "project": "FNIS",
+    "module": "Brain Segmentation",
+    "model": "U-Net",
+    "task": "Binary fetal brain-region segmentation",
+    "foreground_definition": [
+        "RGB(255,0,0)",
+        "RGB(0,0,255)",
+        "RGB(0,255,0)"
+    ],
+    "background_definition": "RGB(0,0,0)",
+    "input_channels": 1,
+    "input_resolution": "352x512",
+    "prediction_threshold": 0.5,
+    "checkpoint_epoch": 41,
+    "best_epoch": 41,
+    "best_validation_dice": 0.9613029841869248,
+    "test_results": {
+        "test_images": 303,
+        "dice": 0.9475,
+        "iou": 0.9223,
+        "precision": 0.9463,
+        "recall": 0.9743,
+        "specificity": 0.9767,
+        "test_loss": 0.138663
+    },
+    "created_at": "2026-09-26T07:52:07.189923"
+}

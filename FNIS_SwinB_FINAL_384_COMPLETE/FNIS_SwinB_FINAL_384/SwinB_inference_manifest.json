@@ -1,0 +1,44 @@
+{
+  "component": "FNIS Swin-B Brain Plane Classifier",
+  "model_file": "FNIS_SwinB_384_best_model.pt",
+  "input": {
+    "type": "ultrasound_image",
+    "channels": 3,
+    "size": [
+      384,
+      384
+    ],
+    "preprocessing": "Aspect-ratio preserving resize and center padding",
+    "normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    }
+  },
+  "outputs": {
+    "classes": [
+      "Trans-thalamic",
+      "Trans-ventricular",
+      "Trans-cerebellar",
+      "Non-standard"
+    ],
+    "prediction": "argmax softmax probability",
+    "probabilities": "four-class softmax vector"
+  },
+  "class_mapping": {
+    "0": "Trans-thalamic",
+    "1": "Trans-ventricular",
+    "2": "Trans-cerebellar",
+    "3": "Non-standard"
+  },
+  "training_selection": "Best validation Macro-F1",
+  "test_set": "451-image patient-level held-out test set",
+  "test_used_during_training": false
+}

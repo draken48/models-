@@ -1,0 +1,57 @@
+{
+    "project": "FNIS / FetalScan AI",
+    "model": "FNIS Model 4",
+    "version": "V2",
+    "task": "Fetal head landmark detection and biometric measurement",
+    "scope": "Fetal brain/head ultrasound only",
+    "landmarks": [
+        "OFD1",
+        "OFD2",
+        "BPD1",
+        "BPD2"
+    ],
+    "input_size": [
+        512,
+        512
+    ],
+    "heatmap_size": [
+        128,
+        128
+    ],
+    "backbone": "ConvNeXt Tiny",
+    "feature_channels": [
+        96,
+        192,
+        384,
+        768
+    ],
+    "num_landmarks": 4,
+    "parameters": 30170892,
+    "checkpoint_epoch": 6,
+    "validation_score": 15.504682779312134,
+    "test_samples": 1153,
+    "test_metrics": {
+        "landmark_mean_px": 16.024,
+        "landmark_median_px": 11.805,
+        "landmark_p90_px": 27.106,
+        "landmark_p95_px": 39.365,
+        "landmark_p99_px": 94.911,
+        "landmark_max_px": 234.304,
+        "PCK_5_percent": 4.97,
+        "PCK_10_percent": 35.34,
+        "PCK_20_percent": 82.11,
+        "PCK_30_percent": 91.65,
+        "PCK_50_percent": 96.81,
+        "PCK_100_percent": 99.13,
+        "OFD_MAE_px": 15.707,
+        "OFD_MAPE_percent": 5.488,
+        "BPD_MAE_px": 15.013,
+        "BPD_MAPE_percent": 6.363
+    },
+    "inference": {
+        "decoder": "Local soft-argmax refinement",
+        "pair_matching": "Permutation-invariant OFD/BPD endpoint matching"
+    },
+    "dataset_manifest": "fnis_model4_final_manifest.csv",
+    "status": "Frozen V2 research model"
+}

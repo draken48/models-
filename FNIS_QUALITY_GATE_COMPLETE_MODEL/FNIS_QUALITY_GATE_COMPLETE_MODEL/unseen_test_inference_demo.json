@@ -1,0 +1,14 @@
+{
+  "image_name": "Patient00752_Plane1_3_of_3",
+  "image_path": "/kaggle/working/fnis_quality_data/FETAL_PLANES_DB/Images/Patient00752_Plane1_3_of_3.png",
+  "patient_num": "752",
+  "original_plane": "Other",
+  "true_label": 0,
+  "true_name": "low_quality",
+  "quality_score": 4.186042588116834e-07,
+  "threshold": 0.7400000000000002,
+  "predicted_label": 0,
+  "predicted_name": "low_quality",
+  "confidence": 0.9999995231628418,
+  "correct": true
+}

@@ -1,0 +1,39 @@
+{
+  "created": "20260928_131608",
+  "architecture": "mobilenetv3_small_100",
+  "best_epoch": 6,
+  "best_validation_macro_f1": 0.9943668268693417,
+  "calibrated_threshold": 0.7400000000000002,
+  "export_files": [
+    "FNIS_QualityGate_MobileNetV3Small_best.pt",
+    "FNIS_QualityGate_inference_manifest.json",
+    "README.txt",
+    "best_checkpoint_validation_confusion_matrix.csv",
+    "best_checkpoint_validation_per_class.csv",
+    "best_checkpoint_validation_results.json",
+    "class_balance_config.json",
+    "locked_test_confusion_matrix.csv",
+    "locked_test_per_class_metrics.csv",
+    "locked_test_predictions.csv",
+    "locked_test_results.json",
+    "mobilenetv3_small_training_config.json",
+    "quality_gate_calibrated_threshold.json",
+    "quality_image_audit.json",
+    "quality_image_index.csv",
+    "quality_mobilenetv3_small_metadata.json",
+    "quality_patient_level_split.csv",
+    "quality_preprocessing_config.json",
+    "quality_split_summary.json",
+    "quality_training_history.json",
+    "unseen_test_inference_demo.json",
+    "validation_threshold_sweep.csv"
+  ],
+  "backup_zip": "/kaggle/working/FNIS_QUALITY_GATE_RUN/BACKUPS/FNIS_QUALITY_GATE_FINAL_20260928_131608.zip",
+  "locked_test_results": {
+    "accuracy": 0.9915,
+    "macro_f1": 0.9887,
+    "balanced_accuracy": 0.9906,
+    "roc_auc": 0.9979
+  },
+  "note": "Locked test metrics are copied from the completed Cell 12 evaluation. The threshold was calibrated on validation only."
+}

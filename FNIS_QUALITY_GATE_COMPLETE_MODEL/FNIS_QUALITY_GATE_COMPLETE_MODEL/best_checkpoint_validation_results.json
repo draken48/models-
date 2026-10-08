@@ -1,0 +1,16 @@
+{
+  "checkpoint": "/kaggle/working/FNIS_QUALITY_GATE_RUN/checkpoints/FNIS_QualityGate_MobileNetV3Small_best.pt",
+  "checkpoint_epoch": 6,
+  "num_samples": 1764,
+  "loss": 0.08676409772736007,
+  "accuracy": 0.996031746031746,
+  "macro_precision": 0.9939350900574858,
+  "macro_recall": 0.9948002279352137,
+  "macro_f1": 0.9943668268693417,
+  "balanced_accuracy": 0.9948002279352137,
+  "class_mapping": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "test_set_used": false
+}

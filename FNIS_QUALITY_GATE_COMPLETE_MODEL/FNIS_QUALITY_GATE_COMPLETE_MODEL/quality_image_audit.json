@@ -1,0 +1,23 @@
+{
+  "metadata_records": 12400,
+  "unique_metadata_images": 12400,
+  "unique_image_paths": 12400,
+  "image_files_found": 12400,
+  "duplicate_stems": 0,
+  "missing_images": 0,
+  "extra_disk_images": 0,
+  "unreadable_images": 0,
+  "unique_dimensions": 73,
+  "image_modes": {
+    "L": 12355,
+    "RGBA": 45
+  },
+  "extensions": {
+    ".png": 12400
+  },
+  "split_counts": {
+    "train": 8517,
+    "test": 2119,
+    "val": 1764
+  }
+}

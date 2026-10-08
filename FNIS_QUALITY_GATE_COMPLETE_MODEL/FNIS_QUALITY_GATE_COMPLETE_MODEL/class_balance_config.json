@@ -1,0 +1,20 @@
+{
+  "num_classes": 2,
+  "class_names": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "training_samples": 8517,
+  "class_counts": {
+    "0": 6358,
+    "1": 2159
+  },
+  "class_weights": [
+    0.6697860956192017,
+    1.9724409580230713
+  ],
+  "weight_formula": "N / (K * class_count)",
+  "batch_size": 32,
+  "num_workers": 2,
+  "pin_memory": true
+}

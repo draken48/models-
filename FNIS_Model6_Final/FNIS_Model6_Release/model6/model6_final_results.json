@@ -1,0 +1,22 @@
+{
+  "model": "FNIS Model 6",
+  "base_model": "FNIS Model 5 EfficientNetV2-S",
+  "method": "Monte-Carlo Dropout",
+  "mc_samples": 30,
+  "temperature": 0.923896074295044,
+  "primary_uncertainty": "predictive_entropy",
+  "validation_auc": 0.8988814823183822,
+  "validation_threshold": 0.48003662459450563,
+  "test_error_detection_auc": 0.9301775147928995,
+  "test_accuracy": 0.8823529411764706,
+  "test_macro_f1_all16": 0.7201530872547598,
+  "test_macro_f1_supported": 0.7681632930717438,
+  "test_weighted_f1": 0.871374590127697,
+  "test_balanced_accuracy": 0.7853266478685934,
+  "test_reliable_coverage": 0.8416289592760181,
+  "test_reliable_accuracy": 0.9623655913978495,
+  "test_reliable_macro_f1": 0.8980584311019094,
+  "test_review_error_rate": 0.5428571428571429,
+  "scope": "Fetal brain/head ultrasound only.",
+  "clinical_warning": "Model uncertainty is not clinical certainty."
+}

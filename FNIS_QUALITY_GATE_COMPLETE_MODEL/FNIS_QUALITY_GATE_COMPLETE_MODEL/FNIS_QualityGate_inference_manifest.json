@@ -1,0 +1,48 @@
+{
+  "model_name": "FNIS Quality Gate",
+  "architecture": "mobilenetv3_small_100",
+  "model_checkpoint": "FNIS_QualityGate_MobileNetV3Small_best.pt",
+  "checkpoint_epoch": 6,
+  "input": {
+    "size": [
+      224,
+      224
+    ],
+    "channels": 3,
+    "color": "RGB",
+    "normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "resize": "aspect_ratio_preserving_letterbox"
+  },
+  "classes": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "label_definition": "Plane == 'Fetal brain' -> 1; all other Plane values -> 0",
+  "label_note": "Weak dataset-derived proxy for suitability for fetal brain pipeline processing; not a radiologist-rated clinical image-quality label.",
+  "quality_score": "softmax probability of class 1",
+  "threshold": 0.7400000000000002,
+  "decision_rule": {
+    "high_quality": "quality_score >= 0.74",
+    "low_quality": "quality_score < 0.74"
+  },
+  "validation": {
+    "best_macro_f1": 0.9943668268693417,
+    "threshold_calibrated_on": "validation"
+  },
+  "locked_test": {
+    "used_during_training": false,
+    "used_for_threshold_calibration": false
+  },
+  "created": "20260928_131608"
+}

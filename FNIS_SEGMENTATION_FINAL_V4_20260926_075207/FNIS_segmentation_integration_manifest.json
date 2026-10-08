@@ -1,0 +1,21 @@
+{
+    "module": "FNIS Segmentation",
+    "model_file": "FNIS_U_Net_best_model.pt",
+    "input": {
+        "type": "grayscale ultrasound image",
+        "size": [
+            352,
+            512
+        ]
+    },
+    "output": {
+        "type": "binary brain mask",
+        "shape": [
+            352,
+            512
+        ],
+        "threshold": 0.5
+    },
+    "foreground": "fetal brain region",
+    "status": "trained_and_tested"
+}

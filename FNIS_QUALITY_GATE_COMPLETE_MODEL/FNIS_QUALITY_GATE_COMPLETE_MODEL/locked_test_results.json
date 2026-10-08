@@ -1,0 +1,27 @@
+{
+  "checkpoint": "/kaggle/working/FNIS_QUALITY_GATE_RUN/checkpoints/FNIS_QualityGate_MobileNetV3Small_best.pt",
+  "checkpoint_epoch": 6,
+  "locked_test": true,
+  "test_set_used_during_training": false,
+  "num_samples": 2119,
+  "loss": 0.05502918523447058,
+  "accuracy": 0.9915054270882492,
+  "macro_precision": 0.9869304818877173,
+  "macro_recall": 0.9905719449543895,
+  "macro_f1": 0.9887339169886222,
+  "balanced_accuracy": 0.9905719449543895,
+  "roc_auc": 0.9978920292020663,
+  "specificity": 0.9924433249370277,
+  "sensitivity": 0.9887005649717514,
+  "confusion_matrix": {
+    "tn": 1576,
+    "fp": 12,
+    "fn": 6,
+    "tp": 525
+  },
+  "class_mapping": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "label_definition": "Plane == 'Fetal brain' -> 1; all other Plane values -> 0"
+}

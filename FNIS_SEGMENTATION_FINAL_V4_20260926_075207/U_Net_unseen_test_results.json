@@ -1,0 +1,21 @@
+{
+    "model": "U-Net",
+    "evaluation_split": "unseen_test",
+    "checkpoint": "/kaggle/working/fnis_zenodo/FNIS_SEGMENTATION_FINAL_V4/checkpoints/best_model.pt",
+    "saved_epoch": 41,
+    "best_epoch": 41,
+    "best_validation_dice": 0.9613029841869248,
+    "test_images": 303,
+    "test_loss": 0.1386628594040477,
+    "dice_mean": 0.9475190340243791,
+    "dice_std": 0.15014301217482312,
+    "iou_mean": 0.9223126947465443,
+    "iou_std": 0.15553065288250786,
+    "precision_mean": 0.946265700960531,
+    "precision_std": 0.15827045236040738,
+    "recall_mean": 0.9743283699400865,
+    "recall_std": 0.030778383212903392,
+    "specificity_mean": 0.976661035403007,
+    "specificity_std": 0.049302102724650285,
+    "prediction_threshold": 0.5
+}

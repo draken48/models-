@@ -1,0 +1,16 @@
+0	anold-chiari-malformation
+1	arachnoid-cyst
+2	cerebellah-hypoplasia
+3	colphocephaly
+4	encephalocele
+5	holoprosencephaly
+6	hydracenphaly
+7	intracranial-hemorrdge
+8	intracranial-tumor
+9	m-magna
+10	mild-ventriculomegaly
+11	moderate-ventriculomegaly
+12	normal
+13	polencephaly
+14	severe-ventriculomegaly
+15	vein-of-galen

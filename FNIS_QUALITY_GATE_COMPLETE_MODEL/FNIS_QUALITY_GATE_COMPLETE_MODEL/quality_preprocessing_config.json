@@ -1,0 +1,30 @@
+{
+  "input_size": 224,
+  "input_channels": 3,
+  "color_mode": "RGB",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "resize": {
+    "method": "aspect_ratio_preserving_letterbox",
+    "target_size": 224
+  },
+  "train_augmentation": {
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": 7,
+    "brightness": 0.1,
+    "contrast": 0.1
+  },
+  "validation_augmentation": "none",
+  "test_augmentation": "none",
+  "batch_size_smoke_test": 32
+}

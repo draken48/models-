@@ -1,0 +1,44 @@
+{
+  "model_name": "FNIS Model 5",
+  "version": "V1",
+  "architecture": "EfficientNetV2-S",
+  "num_classes": 16,
+  "image_size": [
+    384,
+    384
+  ],
+  "input_format": "RGB",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "preprocessing": [
+    "Resize to 400x400",
+    "Center crop to 384x384",
+    "Convert to RGB",
+    "ToTensor",
+    "ImageNet normalization"
+  ],
+  "tta": {
+    "enabled_for_reported_best_result": true,
+    "method": "horizontal_flip",
+    "aggregation": "mean_probability"
+  },
+  "checkpoint": {
+    "best_epoch": 31,
+    "validation_accuracy": 0.7636363636363637,
+    "validation_macro_f1": 0.7036544552070867,
+    "validation_weighted_f1": 0.7505534608429345,
+    "validation_balanced_accuracy": 0.7275268041397073
+  },
+  "scope": "Fetal brain/head ultrasound abnormalities only. Not whole-body fetal imaging.",
+  "evaluation_note": "Intracranial-tumor has no leakage-safe held-out test examples because only two independent source groups were available."
+}

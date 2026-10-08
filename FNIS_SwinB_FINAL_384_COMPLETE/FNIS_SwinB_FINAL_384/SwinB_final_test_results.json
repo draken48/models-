@@ -1,0 +1,94 @@
+{
+  "project": "FNIS",
+  "component": "Swin-B Plane Classification",
+  "model_name": "swin_base_patch4_window12_384.ms_in22k_ft_in1k",
+  "image_size": 384,
+  "num_classes": 4,
+  "class_names": [
+    "Trans-thalamic",
+    "Trans-ventricular",
+    "Trans-cerebellar",
+    "Non-standard"
+  ],
+  "checkpoint_epoch": 19,
+  "best_validation_macro_f1": 0.7698343860941845,
+  "test_images": 451,
+  "test_patients": 163,
+  "test_loss": 0.5618872547361116,
+  "test_accuracy": 0.8314855875831486,
+  "test_macro_precision": 0.7981532356532357,
+  "test_macro_recall": 0.7409349775814682,
+  "test_macro_f1": 0.7649093633459357,
+  "test_balanced_accuracy": 0.7409349775814682,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "Trans-thalamic",
+      "precision": 0.8293650793650794,
+      "recall": 0.8818565400843882,
+      "f1": 0.8548057259713702,
+      "support": 237
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trans-ventricular",
+      "precision": 0.782051282051282,
+      "recall": 0.7011494252873564,
+      "f1": 0.7393939393939394,
+      "support": 87
+    },
+    {
+      "class_id": 2,
+      "class_name": "Trans-cerebellar",
+      "precision": 0.8888888888888888,
+      "recall": 0.8807339449541285,
+      "f1": 0.8847926267281107,
+      "support": 109
+    },
+    {
+      "class_id": 3,
+      "class_name": "Non-standard",
+      "precision": 0.6923076923076923,
+      "recall": 0.5,
+      "f1": 0.5806451612903226,
+      "support": 18
+    }
+  ],
+  "confusion_matrix": [
+    [
+      209,
+      16,
+      10,
+      2
+    ],
+    [
+      25,
+      61,
+      0,
+      1
+    ],
+    [
+      12,
+      0,
+      96,
+      1
+    ],
+    [
+      6,
+      1,
+      2,
+      9
+    ]
+  ],
+  "test_evaluation_seconds": 9.674602508544922,
+  "test_used_during_training": false,
+  "patient_level_split": true,
+  "split": {
+    "train_images": 2159,
+    "train_patients": 756,
+    "validation_images": 482,
+    "validation_patients": 163,
+    "test_images": 451,
+    "test_patients": 163
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "dataset": {
+    "rows": 12400,
+    "unique_images": 12400,
+    "unique_patients": 1792
+  },
+  "label_definition": {
+    "class_0": "low_quality",
+    "class_1": "high_quality",
+    "rule": "Plane == 'Fetal brain' -> 1; all other Plane values -> 0",
+    "note": "Weak dataset-derived proxy for suitability for fetal brain pipeline processing; not a radiologist-rated image-quality label."
+  },
+  "split": {
+    "method": "GroupShuffleSplit",
+    "group_column": "Patient_num",
+    "random_seed": 42,
+    "train_target_fraction": 0.7,
+    "validation_target_fraction": 0.15,
+    "test_target_fraction": 0.15,
+    "patient_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "counts": [
+    {
+      "split": "train",
+      "patients": 1254,
+      "images": 8517,
+      "class_0": 6358,
+      "class_1": 2159,
+      "class_0_pct": 74.6506986027944,
+      "class_1_pct": 25.349301397205586
+    },
+    {
+      "split": "val",
+      "patients": 269,
+      "images": 1764,
+      "class_0": 1362,
+      "class_1": 402,
+      "class_0_pct": 77.21088435374149,
+      "class_1_pct": 22.789115646258505
+    },
+    {
+      "split": "test",
+      "patients": 269,
+      "images": 2119,
+      "class_0": 1588,
+      "class_1": 531,
+      "class_0_pct": 74.94100991033507,
+      "class_1_pct": 25.058990089664935
+    }
+  ]
+}

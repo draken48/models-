@@ -1,0 +1,23 @@
+{
+  "checkpoint": "/kaggle/working/FNIS_QUALITY_GATE_RUN/checkpoints/FNIS_QualityGate_MobileNetV3Small_best.pt",
+  "checkpoint_epoch": 6,
+  "calibration_dataset": "validation",
+  "test_set_used_for_calibration": false,
+  "selection_metric": "high_quality_f1",
+  "default_threshold": 0.5,
+  "calibrated_threshold": 0.7400000000000002,
+  "calibrated_metrics": {
+    "accuracy": 0.9965986394557823,
+    "precision_high_quality": 0.9925373134328358,
+    "recall_high_quality": 0.9925373134328358,
+    "f1_high_quality": 0.9925373134328358,
+    "balanced_accuracy": 0.9951673351305148
+  },
+  "label_mapping": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "label_definition": "Plane == 'Fetal brain' -> 1; all other Plane values -> 0",
+  "deployment_rule": "quality_score >= calibrated_threshold -> high_quality; quality_score < calibrated_threshold -> low_quality",
+  "note": "This threshold is calibrated on the validation split only. The locked test set remains untouched."
+}

@@ -1,0 +1,16 @@
+{
+  "architecture": "mobilenetv3_small_100",
+  "num_classes": 2,
+  "input_size": 224,
+  "input_channels": 3,
+  "pretrained": true,
+  "device_used_for_smoke_test": "cuda",
+  "gpu_name": "Tesla T4",
+  "total_parameters": 1519906,
+  "trainable_parameters": 1519906,
+  "class_mapping": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "note": "Model is currently untrained for the FNIS task. This cell only verifies architecture and inference."
+}

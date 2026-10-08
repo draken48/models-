@@ -1,0 +1,27 @@
+{
+  "architecture": "mobilenetv3_small_100",
+  "num_classes": 2,
+  "input_size": 224,
+  "epochs": 10,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "loss": "Weighted CrossEntropyLoss",
+  "class_weights": [
+    0.6697860956192017,
+    1.9724409580230713
+  ],
+  "class_mapping": {
+    "0": "low_quality",
+    "1": "high_quality"
+  },
+  "random_seed": 42,
+  "mixed_precision": true,
+  "device": "cuda",
+  "selection_metric": "validation_macro_F1",
+  "best_checkpoint": "/kaggle/working/FNIS_QUALITY_GATE_RUN/checkpoints/FNIS_QualityGate_MobileNetV3Small_best.pt",
+  "last_checkpoint": "/kaggle/working/FNIS_QUALITY_GATE_RUN/checkpoints/FNIS_QualityGate_MobileNetV3Small_last.pt",
+  "history_path": "/kaggle/working/FNIS_QUALITY_GATE_RUN/history/quality_training_history.json",
+  "label_definition": "Plane == 'Fetal brain' -> 1; all other Plane values -> 0"
+}
